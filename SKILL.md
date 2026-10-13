@@ -139,6 +139,23 @@ compatibility: 纯文本操作，无依赖。内容层的引文核验可配合 P
 
 ---
 
+## 脚本
+
+随包自带（运行版；开发版与测试在 [`research-workflow`](https://github.com/crce-ux/research-workflow) 的 `scripts/`）：
+
+| 脚本 | 干什么 | 服务于 |
+|---|---|---|
+| `scripts/check_language.py` | 回指 / 排他性断言 / 空泛量词 / 缩写 / 数字口径 | ② 表达层 · ⑦ 数字漂移 |
+| `scripts/check_persona.py` | 身份匹配机检（只报可疑，不下判决） | ④ 身份匹配 |
+| `scripts/check_ref_citations.py` | 正文 [n] ↔ 文末编号表 双向核对 | ⑤ 引用幻觉 |
+| `scripts/verify_pmid_doi.py` | PMID / DOI 反查，确认文献真实存在 | ⑤ 引用幻觉 |
+| `scripts/renumber_refs.py` | 参考文献重编号 | ⑤ 引用幻觉 |
+| `scripts/check_metadata_leak.py` | Office / PDF 隐藏元数据体检 | 交付前 |
+
+**脚本只做能自动化的那一半。**「这条引文真的支持这句话吗」——脚本答不了，必须人工过。
+
+---
+
 ## 参考文件
 
 | 文件 | 何时读 |
