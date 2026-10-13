@@ -1,5 +1,8 @@
 # ai-writing-debug
 
+[![Structure](https://github.com/crce-ux/ai-writing-debug/actions/workflows/structure.yml/badge.svg)](https://github.com/crce-ux/ai-writing-debug/actions/workflows/structure.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 **学术文本的 AI 写作痕迹诊断与修复**
 
 针对**防御性写作**（替审稿人提前攻击自己）、**元语言过多**（值得注意的是 / 综上所述）、**套话与机器腔**、以及**代笔身份错配**——
