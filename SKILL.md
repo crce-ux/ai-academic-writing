@@ -259,6 +259,7 @@ AI 在这里帮你**把贡献逼问清楚**，不替你做决定。
 | `scripts/check_ref_citations.py` | 正文 [n] ↔ 文末编号表 双向核对 | ⑥ ⑦ |
 | `scripts/verify_pmid_doi.py` | PMID / DOI 反查，确认文献真实存在 | ⑥ ⑦ |
 | `scripts/renumber_refs.py` | 参考文献重编号 | ⑦ |
+| `scripts/negation_diff.py` | **改写前后的否定比对**——「原文有、改写后没有」单列。补 `number_diff` 与 `check_token_diff` 之间的空白 | ⑤ 铁律 |
 | `scripts/check_metadata_leak.py` | Office / PDF 隐藏元数据体检（**盲审硬门槛**） | ⑧ |
 | `scripts/check_skill_structure.py` · `scripts/selfcheck.py` | skill 自检 | — |
 
@@ -280,6 +281,7 @@ AI 在这里帮你**把贡献逼问清楚**，不替你做决定。
 | `references/content-audit.md` | ⑥ 内容层四查——引用幻觉 / 论断越界 / 数字漂移 / 定位虚设 |
 | `references/verification-chain.md` | ⑦ 本文核查链——01→02→03 的三态 / 九标签 / 两段式 |
 | `references/ai-boundary.md` | ⑨ AI 能与不能 + 使用声明怎么写 |
+| `references/examples.md` | **正反样例**：表达层可改 vs 内容层只报、引用幻觉（存在 ≠ 支持）、**否定翻转**、身份匹配、文体分叉、AI 声明 |
 
 ---
 

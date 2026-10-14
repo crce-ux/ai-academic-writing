@@ -13,6 +13,7 @@
 | `check_review_article.py` | **综述自称与配置自洽**：标题（或摘要的自我描述）自称「系统综述 / 荟萃分析 / 范围综述」→ 必须有方法学要素（R1 硬）；未定项行数（R2 软）。**不扫摘要里出现的「荟萃分析」**（那是引用别人） | **综述文体** ⑧ |
 | `verify_pmid_doi.py` | PMID / DOI 反查，确认文献真实存在 | ⑤ 引用幻觉 |
 | `renumber_refs.py` | 参考文献重编号 | ⑤ 引用幻觉 |
+| `negation_diff.py` | **改写前后的否定比对**——抽否定短语求差集。「原文有、改写后没有」单列（最危险）。补 `number_diff` 与 `check_token_diff` 的空白：数字变了看得见，**否定丢了几乎看不见** | 铁律「改表达，不改事实」 |
 | `check_metadata_leak.py` | Office / PDF 隐藏元数据体检 | 交付前 |
 | `check_skill_structure.py` | 结构校验（官方 Agent Skills 规范）：name / description / 正文长度 / 深链 / **声明落地** |
 | `selfcheck.py` | **一条命令自检**：结构 + 语法 + 依赖。见下 |
