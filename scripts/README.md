@@ -1,8 +1,8 @@
 # scripts/
 
-**这里是运行版。正本在 [`research-workflow`](https://github.com/crce-ux/research-workflow) 的 `scripts/`**——开发与测试都在总仓。
+**本目录是运行版。正本在 [`research-workflow`](https://github.com/crce-ux/research-workflow) 的 `scripts/`**——开发与测试都在总仓。
 
-改脚本请改总仓，再同步过来；**不要只改这里**（改了不会回流，两边会岔开）。
+改脚本请改总仓，再同步过来；**不要只改本目录**（改了不会回流，两边会岔开）。
 
 | 脚本 | 干什么 | 服务于 |
 |---|---|---|
@@ -35,8 +35,8 @@
 
 ```bash
 python scripts/selfcheck.py            # 结构 + 语法 + 依赖
-python scripts/selfcheck.py --strict   # 结构警告也算失败（CI 用这个）
+python scripts/selfcheck.py --strict   # 结构警告也算失败（CI 用 --strict）
 ```
 
 查三样：**结构**（官方规范）· **语法**（逐个编译 `scripts/*.py`）· **依赖**（哪些脚本要装第三方库，只报不判）。
-下载本 skill 后想确认「东西是齐的、没坏的」，跑这一条就够。
+下载本 skill 后想确认「东西是齐的、没坏的」，跑 `selfcheck.py` 就够。

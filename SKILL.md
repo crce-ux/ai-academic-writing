@@ -6,9 +6,9 @@ compatibility: 纯文本操作，无依赖。引文核验可配合 PubMed / Cros
 
 # AI 学术写作 · 全流程
 
-## 这个 skill 管什么
+## 本 skill 管什么
 
-**从「有个结果要写」到「稿子能投出去」，以及 AI 在这条链上能站到哪一步。**
+**从「有个结果要写」到「稿子能投出去」，以及 AI 在九步链条上能站到哪一步。**
 
 ---
 
@@ -55,7 +55,7 @@ compatibility: 纯文本操作，无依赖。引文核验可配合 PubMed / Cros
 撰写动作（一个段落的四种句子、三种「写不下去」的解法、段间推进）见
 [`references/review-drafting.md`](references/review-drafting.md)。
 
-> ⚠️ 综述的**引用格式审查与排版**不在这里——归 `citation-reviewer`（成文之后）。
+> ⚠️ 综述的**引用格式审查与排版**不在本 skill 里——归 `citation-reviewer`（成文之后）。
 > 表格式引用核对用 `scripts/check_ref_citations.py`。
 
 ---
@@ -67,7 +67,7 @@ compatibility: 纯文本操作，无依赖。引文核验可配合 PubMed / Cros
 > 🔴 **贡献定不了就别动笔。** 与课题设计的**证伪条件**是同一条纪律——
 > 说不清要证明什么，就写不出可检验的论文。
 
-AI 在这里帮你**把贡献逼问清楚**，不替你做决定。
+AI 在定贡献这一步帮你**把贡献逼问清楚**，不替你做决定。
 
 ## ② 搭骨架
 
@@ -102,11 +102,11 @@ AI 在这里帮你**把贡献逼问清楚**，不替你做决定。
 
 | 轴 | 问的问题 | 参考文件 |
 |---|---|---|
-| **① 叙事姿态** | 这段是不是在替审稿人提前攻击自己？ | `references/defensive-writing.md` |
+| **① 叙事姿态** | 待检段落是不是在替审稿人提前攻击自己？ | `references/defensive-writing.md` |
 | **② 表达层** | 词 / 句 / 段 / 章，哪一层有机器腔？ | `references/four-layer-scan.md` |
-| **③ 文体适配** | 这句话放在**这个文体**里对吗？ | `references/medium-rules.md` |
-| **④ 身份匹配** | **这个身份的人**，写得出这句吗？ | `references/persona-match.md` |
-| **⑤ 叙事弧** | 这段论证有没有**转折与落点**（ABT）？ | `references/narrative-arc.md` |
+| **③ 文体适配** | 待检句子放在**所属文体**里对吗？ | `references/medium-rules.md` |
+| **④ 身份匹配** | **所定身份的人**，写得出这句吗？ | `references/persona-match.md` |
+| **⑤ 叙事弧** | 待检论证有没有**转折与落点**（ABT）？ | `references/narrative-arc.md` |
 
 > ② 查「有没有机器腔」，⑤ 查「有没有论证」——**两件事**。
 > 一段全由「既往研究表明…」组成的话，② 过得去，⑤ 过不去。
@@ -218,7 +218,7 @@ AI 在这里帮你**把贡献逼问清楚**，不替你做决定。
 ## Anti-Patterns
 
 - **Never** 在内容层替用户改写
-- **Never** 只核引文存在性就放过——文存在 ≠ 它支持你这句话
+- **Never** 只核引文存在性就放过——文存在 ≠ 它支持你写的这句话
 - **Never** 新增事实、数字、引文、结论
 - **Never** 在没定文体与身份之前动手改——会在另一个维度上把稿子改坏
 - **Never** 把两层八轴混在一遍里查——混查会互相误报
@@ -276,10 +276,10 @@ AI 在这里帮你**把贡献逼问清楚**，不替你做决定。
 | `references/review-drafting.md` | **综述文体**——一个段落的四种句子、三种「写不下去」的解法、段间推进、写作顺序 |
 | `references/defensive-writing.md` | ⑤ 叙事姿态——段落是不是在替审稿人攻击自己 |
 | `references/four-layer-scan.md` | ⑤ 表达层——词 → 句 → 段 → 章，逐层扫；**含「被抹平的术语补回来」的反向动作** |
-| `references/narrative-arc.md` | ⑤ 叙事弧——ABT（And–But–Therefore）：这段论证有没有转折与落点 |
+| `references/narrative-arc.md` | ⑤ 叙事弧——ABT（And–But–Therefore）：待检论证有没有转折与落点 |
 | `references/fidelity-audit.md` | **每次改写都要交的保真审计**——六层 + 论断强度只许降不许升 + 固定格式 |
-| `references/medium-rules.md` | ⑤ 文体适配——这句话放在这个文体里对吗 |
-| `references/persona-match.md` | ⑤ 身份匹配——这个身份的人写得出这句吗 |
+| `references/medium-rules.md` | ⑤ 文体适配——待检句子放在所属文体里对吗 |
+| `references/persona-match.md` | ⑤ 身份匹配——所定身份的人写得出这句吗 |
 | `references/content-audit.md` | ⑥ 内容层四查——引用幻觉 / 论断越界 / 数字漂移 / 定位虚设 |
 | `references/verification-chain.md` | ⑦ 本文核查链——01→02→03 的三态 / 九标签 / 两段式 |
 | `references/ai-boundary.md` | ⑨ AI 能与不能 + 使用声明怎么写 |
