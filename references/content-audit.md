@@ -1,4 +1,4 @@
-# 内容层 · AI 生成学术内容的审查
+# ⑥ 内容层 · 四查（引用幻觉 / 论断越界 / 数字漂移 / 定位虚设）
 
 > **管什么**：这段 AI 写出来的内容，站不站得住。
 > **只报不改**：内容层发现的问题一个字都不替你改——报位置、报类型、报理由、给核验路径。
@@ -32,7 +32,8 @@
 
 > ⚠️ **只核存在性不够。** 文存在 ≠ 它支持你这句话。查到 DOI 有效就放过，是最常见的漏检。
 
-**核验路径**：任何 PubMed / Crossref 反查都可用。本仓不带脚本；作者的总仓 `research-workflow` 里有 `verify_pmid_doi.py` 与 `fetch_abstracts_compare.py` 可直接用。
+**核验路径**：`scripts/verify_pmid_doi.py` 逐条反查 PMID ↔ DOI；`scripts/check_ref_citations.py` 核正文 `[n]` ↔ 文末编号表是否一一对应。
+但**两条都只到"文存在"这一层**——原文说过没说过那句话，得回到 ⑦ 的**语境四级判定**（SUPPORTS / WEAK / WRONG / UNVERIFIED），见 `verification-chain.md`。
 
 ---
 
