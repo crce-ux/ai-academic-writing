@@ -13,6 +13,8 @@
 | `verify_pmid_doi.py` | PMID / DOI 反查，确认文献真实存在 | ⑤ 引用幻觉 |
 | `renumber_refs.py` | 参考文献重编号 | ⑤ 引用幻觉 |
 | `check_metadata_leak.py` | Office / PDF 隐藏元数据体检 | 交付前 |
+| `check_skill_structure.py` | 结构校验（官方 Agent Skills 规范）：name / description / 正文长度 / 深链 / **声明落地** |
+| `selfcheck.py` | **一条命令自检**：结构 + 语法 + 依赖。见下 |
 
 ## 依赖
 
@@ -26,3 +28,13 @@
 - `check_persona.py` 只报可疑，不下判决；`check_language.py` 命中 ≠ 要改
 
 语义判断必须人工过。
+
+## 自检
+
+```bash
+python scripts/selfcheck.py            # 结构 + 语法 + 依赖
+python scripts/selfcheck.py --strict   # 结构警告也算失败（CI 用这个）
+```
+
+查三样：**结构**（官方规范）· **语法**（逐个编译 `scripts/*.py`）· **依赖**（哪些脚本要装第三方库，只报不判）。
+下载本 skill 后想确认「东西是齐的、没坏的」，跑这一条就够。
