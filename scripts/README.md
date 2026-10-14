@@ -1,6 +1,6 @@
 # scripts/
 
-**这里是运行版。正本在 [`research-workflow`](https://github.com/crce-ux/research-workflow) 的 `scripts/`**——开发与测试都在那边。
+**这里是运行版。正本在 [`research-workflow`](https://github.com/crce-ux/research-workflow) 的 `scripts/`**——开发与测试都在总仓。
 
 改脚本请改总仓，再同步过来；**不要只改这里**（改了不会回流，两边会岔开）。
 
@@ -10,10 +10,10 @@
 | `check_phrases.py` | 措辞九组（自我削弱 / 套话 / 抽象标签 / 演义媒体化 / 自问自答 / 伪对立 / 名词化 / 越级引用 / 连接词堆砌） | ① 叙事姿态 · ② 表达层 |
 | `check_persona.py` | 身份匹配机检（只报可疑，不下判决） | ④ 身份匹配 |
 | `check_ref_citations.py` | 正文 [n] ↔ 文末编号表 双向核对 | ⑤ 引用幻觉 · 综述定稿 |
-| `check_review_article.py` | **综述自称与配置自洽**：标题（或摘要的自我描述）自称「系统综述 / 荟萃分析 / 范围综述」→ 必须有方法学要素（R1 硬）；未定项行数（R2 软）。**不扫摘要里出现的「荟萃分析」**（那是引用别人） | **综述文体** ⑧ |
+| `check_review_article.py` | **综述自称与配置自洽**：标题（或摘要的自我描述）自称「系统综述 / 荟萃分析 / 范围综述」→ 必须有方法学要素（R1 硬）；未定项行数（R2 软）。**不扫摘要里出现的「荟萃分析」**（属引用别人的用法） | **综述文体** ⑧ |
 | `verify_pmid_doi.py` | PMID / DOI 反查，确认文献真实存在 | ⑤ 引用幻觉 |
 | `renumber_refs.py` | 参考文献重编号 | ⑤ 引用幻觉 |
-| `negation_diff.py` | **改写前后的否定比对**——抽否定短语求差集。「原文有、改写后没有」单列（最危险）。补 `number_diff` 与 `check_token_diff` 的空白：数字变了看得见，**否定丢了几乎看不见** | 铁律「改表达，不改事实」 |
+| `negation_diff.py` | **改写前后的否定比对**——抽否定短语求差集。「原文有、改写后没有」单列（最危险）。补 `number_diff` 与 `check_token_diff` 的空白：数字变了看得见，**否定丢了几乎看不见** | 规则「改表达，不改事实」 |
 | `check_metadata_leak.py` | Office / PDF 隐藏元数据体检 | 交付前 |
 | `check_skill_structure.py` | 结构校验（官方 Agent Skills 规范）：name / description / 正文长度 / 深链 / **声明落地** |
 | `selfcheck.py` | **一条命令自检**：结构 + 语法 + 依赖。见下 |
@@ -24,7 +24,7 @@
 
 ## 边界
 
-**脚本只做能自动化的那一半。**
+**脚本只做可自动化的部分。**
 
 - `check_ref_citations.py` 只能核「正文编号 ↔ 文末表」对不对得上——**核不了「这条引文真的支持这句话吗」**
 - `check_persona.py` 只报可疑，不下判决；`check_language.py` 命中 ≠ 要改
