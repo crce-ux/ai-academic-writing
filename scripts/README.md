@@ -9,7 +9,8 @@
 | `check_language.py` | 回指 / 排他性断言 / 空泛量词 / 缩写 / 数字口径 | ② 表达层 · ⑦ 数字漂移 |
 | `check_phrases.py` | 措辞九组（自我削弱 / 套话 / 抽象标签 / 演义媒体化 / 自问自答 / 伪对立 / 名词化 / 越级引用 / 连接词堆砌） | ① 叙事姿态 · ② 表达层 |
 | `check_persona.py` | 身份匹配机检（只报可疑，不下判决） | ④ 身份匹配 |
-| `check_ref_citations.py` | 正文 [n] ↔ 文末编号表 双向核对 | ⑤ 引用幻觉 |
+| `check_ref_citations.py` | 正文 [n] ↔ 文末编号表 双向核对 | ⑤ 引用幻觉 · 综述定稿 |
+| `check_review_article.py` | **综述自称与配置自洽**：标题（或摘要的自我描述）自称「系统综述 / 荟萃分析 / 范围综述」→ 必须有方法学要素（R1 硬）；未定项行数（R2 软）。**不扫摘要里出现的「荟萃分析」**（那是引用别人） | **综述文体** ⑧ |
 | `verify_pmid_doi.py` | PMID / DOI 反查，确认文献真实存在 | ⑤ 引用幻觉 |
 | `renumber_refs.py` | 参考文献重编号 | ⑤ 引用幻觉 |
 | `check_metadata_leak.py` | Office / PDF 隐藏元数据体检 | 交付前 |
