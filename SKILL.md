@@ -111,6 +111,10 @@ AI 在这里帮你**把贡献逼问清楚**，不替你做决定。
 | **② 表达层** | 词 / 句 / 段 / 章，哪一层有机器腔？ | `references/four-layer-scan.md` |
 | **③ 文体适配** | 这句话放在**这个文体**里对吗？ | `references/medium-rules.md` |
 | **④ 身份匹配** | **这个身份的人**，写得出这句吗？ | `references/persona-match.md` |
+| **⑤ 叙事弧** | 这段论证有没有**转折与落点**（ABT）？ | `references/narrative-arc.md` |
+
+> ② 查「有没有机器腔」，⑤ 查「有没有论证」——**两件事**。
+> 一段全由「既往研究表明…」组成的话，② 过得去，⑤ 过不去。
 
 ## ⑥ 内容层（只报 → 给核验路径）
 
@@ -162,6 +166,10 @@ AI 在这里帮你**把贡献逼问清楚**，不替你做决定。
 **内容层**——**一个字都不改**。报位置、报类型、报理由、给核验路径。**回作者手里核。**
 
 > 这条是硬边界。内容层替作者改一个字，就等于替他造事实。
+
+> 🔴 **改写不是一个动作，是一对动作：改写 + [保真审计](references/fidelity-audit.md)。**
+> 只交改写的稿子，读者无从判断事实有没有被改掉。六层：受保护 token / 否定 / 数字口径 /
+> 引用 / 术语 / **论断强度**——**任何一层无法证明零损失，就保留原句并标「人工确认」**。
 
 ---
 
@@ -275,7 +283,9 @@ AI 在这里帮你**把贡献逼问清楚**，不替你做决定。
 | `references/review-article.md` | **综述文体**——三种名头各自的配置、常见失败模式、定稿九问 |
 | `references/review-drafting.md` | **综述文体**——一个段落的四种句子、三种「写不下去」的解法、段间推进、写作顺序 |
 | `references/defensive-writing.md` | ⑤ 叙事姿态——那一段是不是在替审稿人攻击自己 |
-| `references/four-layer-scan.md` | ⑤ 表达层——词 → 句 → 段 → 章，逐层扫 |
+| `references/four-layer-scan.md` | ⑤ 表达层——词 → 句 → 段 → 章，逐层扫；**含「被抹平的术语补回来」的反向动作** |
+| `references/narrative-arc.md` | ⑤ 叙事弧——ABT（And–But–Therefore）：这段论证有没有转折与落点 |
+| `references/fidelity-audit.md` | **每次改写都要交的那份审计**——六层 + 论断强度只许降不许升 + 固定格式 |
 | `references/medium-rules.md` | ⑤ 文体适配——这句话放在这个文体里对吗 |
 | `references/persona-match.md` | ⑤ 身份匹配——这个身份的人写得出这句吗 |
 | `references/content-audit.md` | ⑥ 内容层四查——引用幻觉 / 论断越界 / 数字漂移 / 定位虚设 |
