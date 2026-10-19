@@ -52,6 +52,27 @@ compatibility: 纯文本操作，无依赖。引文核验可配合 PubMed / Cros
 
 ---
 
+## 开工前确认（先做这一步）
+
+动笔前先问清：写什么文体、从哪一步开始、投哪里、AI 站到哪一步。用网页表单问完再写。
+
+```bash
+python scripts/confirm.py --spec references/confirm-spec.json \
+    --out <项目目录>/confirm_answers.json --intake <项目目录>/原料/
+```
+
+### 每项答案的下游动作
+
+**表内每一行都得真的改变后续动作。改变不了的，从表单里删掉。**
+
+| 答案 | 下游动作 |
+|---|---|
+| `genre` | 决定走论文还是综述分叉；系统综述与叙述性综述先定名头，再过 `check_review_article` |
+| `materials` | 只有数据 → 从 ① 定贡献开始；有初稿 → 从 ⑤ 表达层与 ⑥ 内容层开始 |
+| `target` | 已定刊 → 按其要求写字数与结构；未定刊 → 按领域通用规格，交付时标明未定项 |
+| `ai_scope` | 「只报不改」时内容层一个字都不改，只报位置与理由 |
+| `deliverable` | 决定停在哪一步；出改成稿时先跑 `check_language` |
+
 ## 九步链条
 
 ```

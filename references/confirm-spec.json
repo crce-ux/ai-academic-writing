@@ -1,0 +1,68 @@
+{
+  "title": "学术写作 · 前置确认",
+  "intro": "以下事项决定走论文还是综述、从第几步开始、AI 站到哪一步。填写完成后提交，写作据此展开。",
+  "questions": [
+    {
+      "id": "genre",
+      "type": "radio",
+      "label": "文体",
+      "effect": "决定走哪条分叉。综述走名头与配置自洽检查，论文走 IMRaD；两者不共用检查项。",
+      "required": true,
+      "options": [
+        {"value": "原创研究论文"},
+        {"value": "综述", "hint": "系统综述 / 叙述性综述须先定名头"},
+        {"value": "摘要或投稿信"},
+        {"value": "审稿回复"}
+      ]
+    },
+    {
+      "id": "materials",
+      "type": "radio",
+      "label": "现有材料",
+      "effect": "决定从第几步开始。只有数据时先定贡献，有初稿时直接进核查链。",
+      "required": true,
+      "options": [
+        {"value": "只有数据与结果"},
+        {"value": "只有提纲"},
+        {"value": "已有初稿", "hint": "直接进 ⑤–⑦ 核查"}
+      ]
+    },
+    {
+      "id": "target",
+      "type": "radio",
+      "label": "目标刊与篇幅",
+      "effect": "决定字数上限、结构要求与图表数量。未定时按领域通用规格写，并在交付时标明未定项。",
+      "required": true,
+      "options": [
+        {"value": "已定刊，有字数要求"},
+        {"value": "已定刊，未查要求"},
+        {"value": "未定刊"}
+      ]
+    },
+    {
+      "id": "ai_scope",
+      "type": "radio",
+      "label": "AI 参与范围",
+      "effect": "决定表达层与内容层的分工。选「只报不改」时，内容层一个字都不改，只报位置与理由。",
+      "required": true,
+      "options": [
+        {"value": "可以改写表达，不动事实"},
+        {"value": "只报问题，不改稿"},
+        {"value": "只用它做核查与检索"}
+      ]
+    },
+    {
+      "id": "deliverable",
+      "type": "radio",
+      "label": "本次交付范围",
+      "effect": "决定停在哪一步。",
+      "required": true,
+      "options": [
+        {"value": "贡献陈述与提纲"},
+        {"value": "初稿"},
+        {"value": "润色稿"},
+        {"value": "投稿前自审报告"}
+      ]
+    }
+  ]
+}
