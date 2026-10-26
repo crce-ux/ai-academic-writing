@@ -8,6 +8,7 @@ compatibility: 纯文本操作，无依赖。引文核验可配合 PubMed / Cros
 
 ## 读什么
 
+- **每次交付前** → `references/preflight-checklist.md`（第 0 步定文体 + 五轴 + 四查，逐项标已查／未查）
 - 起草与改写 → `references/drafting.md`；文体规则 → `references/medium-rules.md`
 - 去 AI 味四层扫描 → `references/four-layer-scan.md`
 - AI 使用边界与声明 → `references/ai-boundary.md`
@@ -17,6 +18,10 @@ compatibility: 纯文本操作，无依赖。引文核验可配合 PubMed / Cros
 ## 本 skill 管什么
 
 **从「有个结果要写」到「稿子能投出去」，以及 AI 在九步链条上能站到哪一步。**
+
+> 🔴 **脚本通过 ≠ 表达层通过。**
+> 脚本只覆盖词句与句式；**叙事姿态、文体适配、叙事弧三轴只能人工过**。
+> 交付前按 `references/preflight-checklist.md` 逐项标「已查 / 未查」，把表一起交出去。
 
 ## 上下游接口
 
@@ -171,6 +176,8 @@ AI 在定贡献这一步帮你**把贡献逼问清楚**，不替你做决定。
 
 > ② 查「有没有机器腔」，⑤ 查「有没有论证」——**两件事**。
 > 一段全由「既往研究表明…」组成的话，② 过得去，⑤ 过不去。
+
+**脚本只覆盖 ② 的词句部分。① ③ ⑤ 必须人工逐页过**，顺序按上表。脚本报「✅ 全过」时，只说明 ② 的词句层没命中，不代表另外三轴查过。
 
 ## ⑥ 内容层（只报 → 给核验路径）
 
@@ -362,6 +369,7 @@ AI 在定贡献这一步帮你**把贡献逼问清楚**，不替你做决定。
 | `references/ai-boundary.md` | ⑨ AI 能与不能 + 使用声明怎么写 |
 | `references/examples.md` | **正反样例**：表达层可改 vs 内容层只报、引用幻觉（存在 ≠ 支持）、**否定翻转**、身份匹配、文体分叉、AI 声明 |
 | `references/revision-discipline.md` | **每次改稿先读**——三档模式、五条编辑纪律、缺证据时的占位符、改完核对什么 |
+| `references/preflight-checklist.md` | **每次交付前填**——第 0 步定文体、五轴、内容层四查、收尾四件；逐项标已查／未查 |
 | `references/lexicon-zh.md` | 中文词表——按机检组号归并的词条与白名单 |
 
 ---
@@ -375,6 +383,7 @@ AI 在定贡献这一步帮你**把贡献逼问清楚**，不替你做决定。
 | `references/defensive-writing.md` | 改编自 GitHub 开源 skill 仓库集群（2026-10-12 检索核实）；主次规则与 D1–D9 分类 2026-10-26 补 |
 | `references/lexicon-zh.md` | 译自 [`junbolian/Academic-Humanizer`](https://github.com/junbolian/Academic-Humanizer) 的 lexicon.txt 与 chinese.md（MIT，Copyright (c) 2026 Junbo Lian），按本项目组号重新归并 |
 | `references/revision-discipline.md` | 三档模式与编辑纪律参考 [`junbolian/Academic-Humanizer`](https://github.com/junbolian/Academic-Humanizer)（MIT），按本项目工序改写 |
+| `references/preflight-checklist.md` | 作者原创（2026-10-26 一次真实自检的复盘，见 TRS_EEG 项目 `11_技能使用复盘_20261026.md`） |
 | `references/four-layer-scan.md` | 改编自 [`huangwb8/ChineseResearchLaTeX`](https://github.com/huangwb8/ChineseResearchLaTeX) 的 `nsfc-humanization` v1.2.0（MIT） |
 | `references/verification-chain.md` | 改编自 [Research-OS-Studio](https://github.com/toRolex/Research-OS-Studio) 的 `citation-audit` / `paper-claim-audit` / `claim-stress-test`（MIT），按精神医学临床研究场景重写 |
 | `references/medium-rules.md` | 作者原创（87 处口语化清理的实证归纳） |
