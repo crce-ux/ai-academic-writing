@@ -361,6 +361,8 @@ AI 在定贡献这一步帮你**把贡献逼问清楚**，不替你做决定。
 | `references/verification-chain.md` | ⑦ 本文核查链——01→02→03 的三态 / 九标签 / 两段式 |
 | `references/ai-boundary.md` | ⑨ AI 能与不能 + 使用声明怎么写 |
 | `references/examples.md` | **正反样例**：表达层可改 vs 内容层只报、引用幻觉（存在 ≠ 支持）、**否定翻转**、身份匹配、文体分叉、AI 声明 |
+| `references/revision-discipline.md` | **每次改稿先读**——三档模式、五条编辑纪律、缺证据时的占位符、改完核对什么 |
+| `references/lexicon-zh.md` | 中文词表——按机检组号归并的词条与白名单 |
 
 ---
 
@@ -370,7 +372,9 @@ AI 在定贡献这一步帮你**把贡献逼问清楚**，不替你做决定。
 
 | 文件 | 来源 |
 |---|---|
-| `references/defensive-writing.md` | 改编自 GitHub 开源 skill 仓库集群（2026-10-12 检索核实） |
+| `references/defensive-writing.md` | 改编自 GitHub 开源 skill 仓库集群（2026-10-12 检索核实）；主次规则与 D1–D9 分类 2026-10-26 补 |
+| `references/lexicon-zh.md` | 译自 [`junbolian/Academic-Humanizer`](https://github.com/junbolian/Academic-Humanizer) 的 lexicon.txt 与 chinese.md（MIT，Copyright (c) 2026 Junbo Lian），按本项目组号重新归并 |
+| `references/revision-discipline.md` | 三档模式与编辑纪律参考 [`junbolian/Academic-Humanizer`](https://github.com/junbolian/Academic-Humanizer)（MIT），按本项目工序改写 |
 | `references/four-layer-scan.md` | 改编自 [`huangwb8/ChineseResearchLaTeX`](https://github.com/huangwb8/ChineseResearchLaTeX) 的 `nsfc-humanization` v1.2.0（MIT） |
 | `references/verification-chain.md` | 改编自 [Research-OS-Studio](https://github.com/toRolex/Research-OS-Studio) 的 `citation-audit` / `paper-claim-audit` / `claim-stress-test`（MIT），按精神医学临床研究场景重写 |
 | `references/medium-rules.md` | 作者原创（87 处口语化清理的实证归纳） |
