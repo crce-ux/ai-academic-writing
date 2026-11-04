@@ -113,6 +113,30 @@ python scripts/check_metadata_leak.py <稿件.docx> --scene blind   # 盲审泄�
 
 **脚本只做可自动化的部分。**「这条引文真的支持这句话吗」——脚本答不了，必须人工过（⑦ 的语境四级判定）。
 
+## 环境与依赖
+
+脚本可选。只用 `SKILL.md` 与 `references/` 时，不需要安装任何东西。
+
+- Python >= 3.9
+- 第三方依赖见 `requirements.txt`
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate        # Windows
+source .venv/bin/activate     # macOS / Linux
+pip install -r requirements.txt
+```
+
+| 脚本 | 依赖 |
+|---|---|
+| `scripts/check_metadata_leak.py` | PyMuPDF |
+
+依赖缺失时，自检脚本只报告、不中断。
+
+```bash
+python scripts/selfcheck.py
+```
+
 ## 自检
 
 ```bash
